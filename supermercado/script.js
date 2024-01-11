@@ -17,20 +17,30 @@ document.addEventListener('DOMContentLoaded', function() {
             valor: valorProduto.value
         })
     
+            let soma = 0;
+
             listaProdutos = document.querySelector('.lista-produto');
             listaProdutos.innerHTML = '';
             itens.map(function(val){
-            listaProdutos.innerHTML+=`
-            <div class="lista-produto-single">
-                    <h3>`+val.nome+`</h3>
-                    <h3 class="price-produto"><span>R$`+val.valor+`</span></h3>
-                </div>     
-            </div>
-            `
-        
+
+                soma += parseFloat(val.valor);
+                listaProdutos.innerHTML+=`
+                <div class="lista-produto-single">
+                        <h3>`+val.nome+`</h3>
+                        <h3 class="price-produto"><span>R$`+val.valor+`</span></h3>
+                    </div>     
+                </div>
+                `
+            
+
             });
+        soma = soma.toFixed(2);
+        alert(soma);
         nomeProduto.value = '';
         valorProduto.value = '';
+
+        somaProduto = document.querySelector('.soma-produto h1')
+        .innerHTML = 'R$' + soma
     });
 
 });
