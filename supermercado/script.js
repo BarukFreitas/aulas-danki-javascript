@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>     
                 </div>
                 `
-            
 
             });
         soma = soma.toFixed(2);
@@ -45,7 +44,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+var somaProduto = document.getElementById('.soma-produto h1');
+var limparCarrinho = document.getElementById('limpar');
 
+document.getElementById('.limpar')
+.addEventListener('click', function(){
+    alert('limpado!')
+    somaProduto = document.getElementById('.soma-produto h1')
+    .innerHTML = 'R$0';
+    
+})
 /*
 
 <div class="lista-produto-single">
