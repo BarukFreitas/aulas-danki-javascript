@@ -19,7 +19,7 @@
         name="nome_produto" />
         <input type="number" step="0.01" placeholder="valor do produto"
         name="valor_produto" />
-        <input type="submit" name="acao" value="Cadastrar" id="cadastrar">
+        <input type="submit" name="acao" value="Cadastrar" onclick="cadastrar()">
     </div>
 
     <div class="lista-produto">
@@ -33,8 +33,6 @@
         <h1>Total: R$0</h1>
     </div>
 
-    <div class="limpar-carrinho">
-        <input type="button" name="limpar" id="limpar" value="Limpar Carrinho">
-    </div>
+    <button name="limpar" onclick="limpar()">Limpar</button>
 </body>
 </html>

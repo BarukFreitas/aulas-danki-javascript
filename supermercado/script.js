@@ -1,14 +1,6 @@
 var itens = [];
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Aguarda o carregamento completo do DOM
-  
-    // Obtém o botão "Cadastrar" pelo ID
-    var cadastrarButton = document.getElementById('cadastrar');
-  
-    // Adiciona um ouvinte de evento para o evento 'click'
-    cadastrarButton.addEventListener('click', function() {
+        function cadastrar() {
         let nomeProduto = document.querySelector('input[name=nome_produto]');
         let valorProduto = document.querySelector('input[name=valor_produto]');
 
@@ -38,22 +30,17 @@ document.addEventListener('DOMContentLoaded', function() {
         nomeProduto.value = '';
         valorProduto.value = '';
 
+        
         somaProduto = document.querySelector('.soma-produto h1')
         .innerHTML = 'R$' + soma
-    });
-
-});
-
-var somaProduto = document.getElementById('.soma-produto h1');
-var limparCarrinho = document.getElementById('limpar');
-
-document.getElementById('.limpar')
-.addEventListener('click', function(){
-    alert('limpado!')
-    somaProduto = document.getElementById('.soma-produto h1')
-    .innerHTML = 'R$0';
+    }
     
-})
+    function limpar(){
+        somaProduto = docment.querySelector('.soma-produto h1');
+        somaProduto.innerHTML = 'R$0'
+        
+    }
+
 /*
 
 <div class="lista-produto-single">

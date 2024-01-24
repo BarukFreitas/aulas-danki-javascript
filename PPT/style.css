@@ -1,0 +1,7 @@
+.player-options,
+.enemy-options{
+    max-width: 150px;
+    opacity: 0.3;
+    cursor: pointer;
+    margin: 50px;
+};
