@@ -1,7 +1,29 @@
+.options-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
 .player-options,
-.enemy-options{
-    max-width: 150px;
+.enemy-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-options div,
+.enemy-options div {
+    margin: 10px;  /* Ajuste o valor conforme necessário para espaçamento entre as opções */
+}
+
+.player-options img,
+.enemy-options img {
+    max-width: 100px; /* Ajuste o valor conforme necessário para o tamanho máximo dos ícones */
     opacity: 0.3;
     cursor: pointer;
-    margin: 50px;
-};
+}
+
+.player-options img:hover,
+.enemy-options img:hover {
+    opacity: 0.8;
+}
