@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pokedex</h1>
+    </header>
+
+    <main>
+        <section class="search-bar">
+            <input type="text" placeholder="Pesquisar Pokémon..." id="searchInput">
+            <button onclick="searchPokemon()">Pesquisar</button>
+        </section>
+
+        <section class="pokemon-list" id="pokemonList">
+            <!-- Aqui serão adicionados dinamicamente os cartões de Pokémon -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Pokedex</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
